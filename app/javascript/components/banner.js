@@ -6,7 +6,7 @@ const loadDynamicBannerText = () => {
   if (text) {
     new Typed('#banner-typed-text', {
       strings: ["Fullstack Développeur", "Ruby on Rails", "React.js"],
-      typeSpeed: 75,
+      typeSpeed: 35,
       loop: true,
       showCursor: false
     });
