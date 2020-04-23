@@ -9,8 +9,9 @@
 
   h1 {
     color: white;
-    margin-left: 105px;
-    margin-top: 550px;
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
   }
 }
 
@@ -83,4 +84,22 @@ h3 {
 .job-container {
   display: flex;
   justify-content: space-evenly;
+  height: auto;
+}
+
+.carousel-item {
+  height: 345px!important;
+
+  img {
+    height: 345px!important;
+    object-fit: contain;
+  }
+
+}
+
+.job-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 15px;
 }
