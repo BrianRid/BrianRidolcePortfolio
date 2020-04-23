@@ -1,2 +1,126 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2106&q=80);">
+  <h1> <span id="banner-typed-text"></span> </h1>
+</div>
+<div class="container">
+<%# Presentation and background %>
+    <hr>
+  <div class="description-container">
+    <h2 data-aos="zoom-in">À propos</h2>
+    <hr>
+    <img data-aos="fade-up" class="avatar" src=<%= image_path'Brian.jpg'%> alt='avatar'>
+    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="profil-card" >
+      <p >
+        Bonjour, <br>
+        <br>
+        Je m'appelle Brian et je suis <strong>développeur fullstack en freelance</strong>.<br>
+        <br>
+        Après avoir obtenu mon diplôme à l'Institut Mines-Telecom Business School (IMT-BS), j'ai travaillé pendant 4 ans en tant que <strong>Consultant en Transformation Digitale</strong>.
+        J'ai ainsi développé de fortes compétences <strong>en gestion de projet IT</strong> et en accompagnement dans le déploiement d'applications métiers (pilotage, recette, promotion, ...).<br>
+        <br>
+        Ayant toujours été passionné par l'informatique et par les multiples possibilités qu'offre cette discipline, j'ai décidé de suivre le Bootcamp du <a href='https://www.lewagon.com/fr'>Wagon</a>.
+        Cette formation intensive de 9 semaines, m'a permis d'acquérir de solides bases techniques que je perfectionne au fil des projets que je réalise.<br>
+        <br>
+        Aujourd'hui cette double compétences technique et fonctionnelle me permette de vous proposer mes services, pour vous accompagner dans le développement de vos projets Web.
+        Je développe et concois des sites pour mettre en valeur une entreprise, un service ou un produit (site vitrine, site e-commerce) ou des applications web plus spécifiques permettant de répondre aux besoins
+        de mes clients professionnels.<br>
+        <br>
+        Je peux également vous accompagner dans les premières phases de vos projets pour créer des MVP afin de tester rapidement votre idée et construire une première base solide pour concrétiser votre projet.
+      </p>
+    </div>
+  </div>
+  <%# Skills presentation %>
+  <div class="skills">
+    <hr>
+    <h2 data-aos="zoom-in">Compétences et languages</h2>
+    <hr>
+     <h3 data-aos="zoom-in-down">Développement Front-End</h3>
+    <div data-aos="fade-right" data-aos-easing="ease-in-sine" class="row m-4 p-3">
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="">
+        <p>React.js</p>
+      </div>
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+        <p>JavaScript</p>
+      </div>
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo"src="data:image/png;base64,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" alt="">
+        <p>HTML5</p>
+      </div>
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://i0.wp.com/gafish.fr/wp-content/uploads/2013/03/Logo_CSS3.png?ssl=1" alt="">
+        <p>CSS3</p>
+      </div>
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="">
+        <p>Figma</p>
+      </div>
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="">
+        <p>Bootsrap</p>
+      </div>
+    </div>
+    <h3 data-aos="zoom-in-down"> Développement Back-End</h3>
+    <div data-aos="fade-left" data-aos-easing="ease-in-sine" class="row language-list m-4 p-3">
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png" alt="">
+        <p>Ruby on Rails</p>
+      </div>
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/768px-Ruby_logo.svg.png" alt="">
+        <p>Ruby</p>
+      </div>
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://miro.medium.com/max/600/1*azXCwE1ZPcz7N3NjRQ8daw.png" alt="">
+        <p>Sidekiq</p>
+      </div>
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://makina-corpus.com/blog/metier/2017/postgresql-utilisations-avancees-de-generate_series-pour-generer-du-contenu/image_mini" alt="">
+        <p>Postgresql</p>
+      </div>
+    </div>
+
+    <h3 data-aos="zoom-in-down">Déploiement</h3>
+    <div data-aos="fade-right" data-aos-easing="ease-in-sine" class="row m-4 p-3">
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://dropboxdeveloperblog.files.wordpress.com/2014/11/heroku-logotype-vertical-purple1.png?w=650" alt="">
+        <p>Heroku</p>
+      </div>
+    </div>
+    <h3 data-aos="zoom-in-down">Versionning et collaboration</h3>
+    <div data-aos="fade-left" data-aos-easing="ease-in-sine" class="row m-4 p-3">
+      <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="data:image/png;base64,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" alt="">
+        <p>Git</p>
+      </div>
+       <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" alt="">
+        <p>Github</p>
+      </div>
+       <div class="col-sm-4 col-6 col-md-2">
+        <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/7/7e/Slack_logo.svg/1200px-Slack_logo.svg.png" alt="">
+        <p>Slack</p>
+      </div>
+    </div>
+  </div>
+  <%# Jobs and projects %>
+  <div class="job-container">
+  <hr>
+  <h2 data-aos="zoom-in"> Réalisations et projets </h2>
+  <hr>
+    <div class="job-cards">
+
+    </div>
+    <div class="job-cards">
+    </div>
+  </div>
+  <%#  contacts and more %>
+  <div class="contact-container">
+  <hr>
+  <h2 data-aos="zoom-in"> Contact et tarifs </h2>
+  <hr>
+    <%# linkedin / malt / github %>
+  </div>
+
+</div>
