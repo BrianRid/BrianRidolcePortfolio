@@ -1,13 +1,21 @@
 
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2106&q=80);">
+  <div class="container">
+    <div class="navbar">
+      <a href="#Presentation">A propos</a>
+      <a href="#TechSkills">Compétences & langages</a>
+      <a href="#Jobs">Réalisations et projets</a>
+      <a href="#Contact">Contact et tarifs</a>
+    </div>
+  </div>
   <h1> <span id="banner-typed-text"></span> </h1>
 </div>
 <div class="container">
 <%# Presentation and background %>
     <hr>
-  <div class="description-container">
+  <div id="Presentation" class="description-container">
     <h2 data-aos="zoom-in">À propos</h2>
-    <hr>
+
     <img data-aos="fade-up" class="avatar" src=<%= image_path'Brian.jpg'%> alt='avatar'>
     <div class="profil-card" >
       <p >
@@ -35,11 +43,11 @@
     </div>
   </div>
   <%# Skills presentation %>
-  <div class="skills">
+  <div id="TechSkills" class="skills">
     <hr>
-    <h2 data-aos="zoom-in">Compétences et languages</h2>
+    <h2>Compétences et langages</h2>
     <hr>
-     <h3>Développement Front-End</h3>
+     <h3 data-aos="zoom-in">Développement Front-End</h3>
     <div data-aos="fade-right" data-aos-easing="ease-in-sine" class="row m-4 p-3">
       <div class="col-sm-4 col-6 col-md-2">
         <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="">
@@ -66,7 +74,7 @@
         <p>Bootstrap</p>
       </div>
     </div>
-    <h3> Développement Back-End</h3>
+    <h3 data-aos="zoom-in"> Développement Back-End</h3>
     <div data-aos="fade-left" data-aos-easing="ease-in-sine" class="row language-list m-4 p-3">
       <div class="col-sm-4 col-6 col-md-2">
         <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png" alt="">
@@ -86,14 +94,14 @@
       </div>
     </div>
 
-    <h3>Déploiement</h3>
+    <h3 data-aos="zoom-in">Déploiement</h3>
     <div data-aos="fade-right" data-aos-easing="ease-in-sine" class="row m-4 p-3">
       <div class="col-sm-4 col-6 col-md-2">
         <img class="skills-logo" src="https://dropboxdeveloperblog.files.wordpress.com/2014/11/heroku-logotype-vertical-purple1.png?w=650" alt="">
         <p>Heroku</p>
       </div>
     </div>
-    <h3>Versionning et collaboration</h3>
+    <h3 data-aos="zoom-in">Versionning et collaboration</h3>
     <div data-aos="fade-left" data-aos-easing="ease-in-sine" class="row m-4 p-3">
       <div class="col-sm-4 col-6 col-md-2">
         <img class="skills-logo" src="data:image/png;base64,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" alt="">
@@ -113,12 +121,13 @@
   <%# Jobs and projects %>
 
   <hr>
-  <h2 data-aos="zoom-in"> Réalisations et projets </h2>
+  <h2 id="Jobs"> Réalisations et projets </h2>
   <hr>
   <div class="job-container">
     <div class="row">
       <div data-aos="flip-right" data-aos-offset="150" class="job-cards col-sm-12 col-md-5 col-lg-6">
        <%# Carroussel 1 %>
+       <a href="https://www.les-logements-solidaires.com/" target=”_blank”>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -143,48 +152,52 @@
             <span class="sr-only">Suivant</span>
           </a>
         </div>
+       </a>
         <%# End Carroussel %>
         <div class="project-description d-flex mt-2">
           <p>
             Les Logements Solidaires est un projet auquel j'ai participé bénévolement pendant l'épidémie de COVID-19. Ce site a pour but d'aider le personnel soignant à trouver un logement gratuit proche de leur hopital d'affectation, dans le contexte de réquisition du personnel soignant.
             Ce site a été réalisé en 10 jours et a été entièrement codé en Ruby on Rails, HTML, CSS et JS (vanilla).
           </p>
-          <a href="https://www.les-logements-solidaires.com/">www.les-logements-solidaires.com</a>
+          <a class="joblink" href="https://www.les-logements-solidaires.com/" target=”_blank”>www.les-logements-solidaires.com</a>
         </div>
       </div>
       <div data-aos="flip-right" data-aos-offset="150" class="job-cards col-sm-12 col-md-5 col-lg-6">
         <%# Carroussel 2 %>
-         <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100 img-fluid" src="<%=image_path"HBHomepage.jpg"%>" alt="First slide">
+        <a href="https://homelib.herokuapp.com/" target=”_blank”>
+          <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="<%=image_path"HBHomepage.jpg"%>" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="<%=image_path"HBDashboard.jpg"%>" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="<%=image_path"HBsuscribe.jpg"%>" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="<%=image_path"HBconnect.jpg"%>" alt="Third slide">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 img-fluid" src="<%=image_path"HBDashboard.jpg"%>" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 img-fluid" src="<%=image_path"HBsuscribe.jpg"%>" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 img-fluid" src="<%=image_path"HBconnect.jpg"%>" alt="Third slide">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Suivant</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Précédent</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Suivant</span>
-          </a>
-        </div>
+        </a>
+
         <%# End Carroussel %>
         <div class="project-description d-flex mt-2">
            <p>
             Homelib est un projet réalisé en clotûre du bootcamp du Wagon. Il s'agit d'une plateforme digitale permettant à un locataire de déclarer un incident (plomberie, chauffage, serrurerie, ...) en toute autonomie et d'entrer en contact avec un artisan certifié et de confiance pour réaliser la réparation.
             Ce projet a été réalisé en 2 semaines et codé entièrement en Ruby on Rails.
           </p>
-          <a href="https://homelib.herokuapp.com/">Homelib.com</a>
+          <a class="joblink" href="https://homelib.herokuapp.com/" target=”_blank”>Homelib.com</a>
         </div>
       </div>
     </div>
@@ -192,9 +205,9 @@
 
   <%#  contacts and more %>
 
-  <div class="contact-container">
+  <div id="Contact" class="contact-container">
   <hr>
-  <h2 data-aos="zoom-in"> Contact et tarifs </h2>
+  <h2> Contact et tarifs </h2>
   <hr>
     <div class="contact d-flex">
         <a href='https://www.linkedin.com/in/brian-ridolce-a1bb70a7/' target=”_blank”><img src="https://www.stickpng.com/assets/images/58e91afdeb97430e81906504.png" alt=""></a>

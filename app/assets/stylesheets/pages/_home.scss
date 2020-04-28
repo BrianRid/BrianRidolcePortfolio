@@ -19,6 +19,24 @@
   }
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  top: -105px;
+  a {
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    color: white;
+  }
+  a:hover{
+    text-decoration: underline;
+    color: white;
+
+  }
+}
+
 .description-container {
   display: flex;
   flex-direction: column;
@@ -120,5 +138,13 @@ h3 {
   a {
     text-align: center;
     letter-spacing: 1.5px;
+  }
+}
+
+.joblink {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: black;
   }
 }
