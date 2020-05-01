@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>Nouvel Email de  <%= @message.name %>!</p>
+    <p>
+      Détails : <br>
+    --------------------------
+    </p>
+    <p>Nom: <%= @message.name %></p>
+    <p>Prénom: <%= @message.first_name %></p>
+    <p>Email: <%= @message.email %></p>
+    <p>Message: <%= @message.message %></p>
+  </body>
+</html>
