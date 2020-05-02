@@ -99,13 +99,13 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :smtp
   host = 'brianridolce.com' #replace with your own url
-  config.action_mailer.default_url_options = { host: host }
+  config.action_mailer.default_url_options = { host: 'brianridolce.com' }
 
 # SMTP settings for gmail
 config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-   domain:               'brianridolce.com',
+  :domain               => 'brianridolce.com',
   :user_name            => ENV["GMAIL_EMAIL"],
   :password             => ENV["GMAIL_PASSWORD"],
   :authentication       => "plain",
