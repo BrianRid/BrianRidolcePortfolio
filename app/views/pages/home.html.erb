@@ -210,15 +210,11 @@
   <hr>
   <h2> Contact et tarifs </h2>
   <hr>
-    <div class="contact_form" data-aos="fade-in" data-aos-offset="200">
-      <h4>Vous avez un projet à réaliser ?</h4>
-      <%= render "messages/new" %>
-    </div>
     <div class="subtitle">
-      <h4 style='text-align:center; letter-spacing:1.1px; margin: 25px;'>Des tarifs adaptés à l'ampleur de vos projets </h4>
+      <h4 style='text-align:center; letter-spacing:1.1px; margin: 25px;' data-aos='zoom-in'>Des tarifs adaptés à l'ampleur de vos projets </h4>
     </div>
     <div class="pricing">
-      <div class="card">
+      <div class="card" data-aos='flip-left' data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="card-title">
          <h2>Développement sur mesure</h2>
         </div>
@@ -227,14 +223,14 @@
           <p>Définition de l'architecture et de la base de donnée</p>
           <p>Développements et intégration de services tiers (API)</p>
           <p>Site responsive (adapté tous supports)</p>
-          <p>Déploiement et mise en ligne sous nom de domaine personnalisé</p>
+          <p>Déploiement sous nom de domaine personnalisé</p>
         </div>
         <div class="card-price">
           <h3><strong>300€</strong> / jour</h3>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos='flip-right' data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="card-title">
          <h2>Développement plateforme e-commerce</h2>
         </div>
@@ -243,12 +239,16 @@
           <p>Ajout et organisation de vos contenus</p>
           <p>Configuration du back office shopify</p>
           <p>Tests et lancement</p>
-          <p>Mise en ligne et déploiement</p>
+          <p>Déploiement sous nom de domaine personnalisé</p>
         </div>
         <div class="card-price">
           <h3><strong>2500€ TTC</strong></h3>
         </div>
       </div>
+    </div>
+    <div class="contact_form" data-aos="fade-in" data-aos-offset="200">
+      <h4>Vous avez un projet à réaliser ?</h4>
+      <%= render "messages/new" %>
     </div>
     <div class="contact d-flex">
         <a class="icon" href='https://www.linkedin.com/in/brian-ridolce-a1bb70a7/' target=”_blank”><img src="https://www.stickpng.com/assets/images/58e91afdeb97430e81906504.png" alt="Brian Ridolce Linkedin"></a>
