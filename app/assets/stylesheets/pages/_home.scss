@@ -179,20 +179,13 @@ h3 {
   transform: scale(1.1);
 }
 
-.pricing {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(45% - 45px);
   height: auto;
-  margin-top: 15px;
+  // margin-top: 15px;
+  margin: 15px;
   padding: 20px;
   box-shadow: 5px 5px 5px 0px rgba(168, 168, 168, 0.7);
 }
